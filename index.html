@@ -14,43 +14,95 @@
 </head>
 
 
-<body>
-  <div class="container debug">
-    <form >
+<body class="bg-danger-subtle">
+  <div class="container">
+    <h1 class="text-center"> Calcola la tariffa del tuo biglietto</h1>
+    
+    <div class="container border rounded bg-white">
+      <form >
        <div class="row">
          <div class="col-4">
-          <label>Nome passeggero</label>
-          <input type="text" placeholder="Name" class="form-control passeger">
+           <label>Nome passeggero</label>
+           <input type="text" placeholder="Name" class="form-control passeger">
          </div>
-         
+        
          <div class="col-4">
-          <label >km da percorrere</label>
-          <input type="number" placeholder="km" class="form-control km">
+           <label >km da percorrere</label>
+           <input type="number" placeholder="km" class="form-control km">
          </div>
-
+        
          <div class="col-4">
            <label>età passeggero</label>
            <select class="form-select age">
-             <option class="under">
+             <option>
+               scegli l'età
+             </option>
+             <option value="under">
                Under 18
              </option>
-             <option class="over">
+             <option value="over">
                Over 65
-             </option>   
+             </option>  
+             <option value="between">
+               Nessuna delle opzioni precedenti
+              </option>  
            </select>
-         </div>
-        </div> <!-- row -->
+          </div>
+       </div> <!-- row -->
+      
+        <div class=" d-flex justify-content-center my-3"> 
+          <button type="button" class="btn btn-light mx-3 btn-generate">Genera</button>
+          <button type="button" class="btn btn-light">Annulla</button>
+        </div>
+      </form>
+    </div> <!-- div del container del form -->
+   
+    <h2 class="text-center mt-3">Il tuo biglietto</h2>
 
-       <div class=" d-flex justify-content-center my-3"> 
-         <button type="button" class="btn btn-light mx-3">Genera</button>
-         <button type="button" class="btn btn-light">Annulla</button>
-        </form>
-      </div>
+
+    <div class="container border rounded bg-white mt-1">
+      <form >
+       <div class="row">
+         <div class="col-4 border bg-body-secondary pt-1">
+           <h7 class="text-body-tertiary">Nome passeggero</h7>
+           <p>name</p>
+         </div>
+
+         <div class="col-8 pt-1">
+          <div class="row">
+            <div class="col-3">
+              <h5 class="fs-6 text-body-tertiary">offerta</h5>
+              <p>offer</p>
+            </div>
+
+            <div class="col-3">
+              <h5 class="fs-6 text-body-tertiary">carrozza</h5>
+              <p>carriage</p>
+            </div>
+
+            <div class="col-3">
+              <h5 class="fs-6 text-body-tertiary">Codice</h5>
+              <p>code</p>
+            </div>
+
+            <div class="col-3">
+              <h5 class="fs-6 text-body-tertiary">prezzo</h5>
+              <p>price</p>
+            </div>
+          </div><!-- div row nel col8 -->
+         </div> <!-- div col8 -->
+
+       </div> <!-- row -->
+
+
+
+      </form>
+    </div> <!-- div del container del form -->
   </div> <!-- div del container -->
   
-
-
-
+  
+  
+  
   <script src="js/script.js"></script>
 </body>
 </html>
