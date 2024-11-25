@@ -54,7 +54,6 @@ function generateTicket() {
   resetForm();
  
   containerDmNone.classList.remove('container-dm-none')
-  
 } 
 
 function resetForm () {
