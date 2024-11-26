@@ -5,6 +5,8 @@ const kmPassenger = document.querySelector('.km');
 const agePassenger = document.querySelector('.age');
 
 const bottoneGenerate = document.querySelector('.btn-generate');
+const btnReset = document.querySelector('.btn-reset');
+
 
 /* richiamo le classi scritte in html per il risultato del biglietto e le salvo in una variabile */
 const nameP = document.querySelector('.name-p');
@@ -24,6 +26,7 @@ let message;
 
 /* evento che genera il biglietto  */
 bottoneGenerate.addEventListener('click', generateTicket);
+btnReset.addEventListener('click', buttonReset);
 
 /* funzione che genera il prezzo del biglietto  */
 function generateTicket() {
@@ -62,4 +65,8 @@ function resetForm () {
   agePassenger.value = "default";
 }
 
+function buttonReset(){
+  resetForm();
+  containerDmNone.classList.add('container-dm-none');
+}
 
